@@ -8,7 +8,7 @@ HTML5 (estrutura semântica)
 
 CSS3 (layout, cores, responsividade)
 
-JavaScript (menu hambúrguer e validação simples)
+JavaScript 
 
 Imagens e conteúdo textual
 
