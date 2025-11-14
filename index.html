@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio – Produções de Língua Portuguesa e Redação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <header>
+        <h1>Portfólio – Produções de Língua Portuguesa e Redação</h1>
+        <nav>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <ul id="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#producoes">Produções</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="sobre">
+            <h2>Encerramento do Ano Letivo</h2>
+            <p>
+                Este site reúne as 15 produções realizadas ao longo do ano nas disciplinas 
+                de Língua Portuguesa e Redação. Aqui você poderá visualizar textos, imagens,
+                atividades e reflexões produzidas durante o ano letivo.
+            </p>
+        </section>
+
+        <section id="producoes">
+            <h2>15 Produções</h2>
+
+            <div class="grid-producoes">
+
+                <!-- MODELO DE ITEM - Repita até completar as 15 produções -->
+                <article class="producao">
+                    <img src="img/producao1.jpg" alt="Imagem da Produção 1">
+                    <h3>Produção 1 – Título do Texto</h3>
+                    <p>Breve descrição da produção, explicando o tema e o objetivo.</p>
+                    <a href="#" class="btn">Ler mais</a>
+                </article>
+
+                <article class="producao">
+                    <img src="img/producao2.jpg" alt="Imagem da Produção 2">
+                    <h3>Produção 2 – Título do Texto</h3>
+                    <p>Breve descrição da produção, explicando o tema e o objetivo.</p>
+                    <a href="#" class="btn">Ler mais</a>
+                </article>
+
+                <!-- Repita até 15 -->
+            </div>
+
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Fotos</h2>
+            <div class="galeria">
+                <img src="img/foto1.jpg" alt="Foto de atividade 1">
+                <img src="img/foto2.jpg" alt="Foto de atividade 2">
+                <img src="img/foto3.jpg" alt="Foto de atividade 3">
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form onsubmit="return enviarFormulario()">
+                <label>Nome:</label>
+                <input type="text" required>
+
+                <label>Email:</label>
+                <input type="email" required>
+
+                <label>Mensagem:</label>
+                <textarea required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 – Portfólio Escolar • Língua Portuguesa e Redação</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
