@@ -4,7 +4,7 @@ O objetivo é reunir textos, imagens, atividades e reflexões, celebrando o Ence
 
 ## Tecnologias Usadas
 
--HTML5 (estrutura semântica)
--CSS3 (layout, cores, responsividade)
--JavaScript (menu hambúrguer e validação simples)
--Imagens e conteúdo textual
+HTML5 (estrutura semântica)
+CSS3 (layout, cores, responsividade)
+JavaScript (menu hambúrguer e validação simples)
+Imagens e conteúdo textual
