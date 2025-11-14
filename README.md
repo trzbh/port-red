@@ -1,4 +1,4 @@
-# Portfólio de redações
+## Portfólio de redações
 Este projeto apresenta um site portfólio contendo as 15 produções desenvolvidas ao longo do ano letivo nas disciplinas de Língua Portuguesa e Redação.
 O objetivo é reunir textos, imagens, atividades e reflexões, celebrando o Encerramento do Ano Letivo.
 
