@@ -1,11 +1,14 @@
 // Menu hambúrguer
-function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-}
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
 
-// Função simples de envio de formulário
-function enviarFormulario() {
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('show');
+});
+
+// Mensagem de envio do formulário
+document.getElementById('contato-form').addEventListener('submit', function(e) {
+    e.preventDefault();
     alert("Mensagem enviada com sucesso!");
-    return false; // evita envio real
-}
+    this.reset();
+});
