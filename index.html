@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio – Produções de Língua Portuguesa e Redação</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfólio de Redações</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Portfólio – Produções de Língua Portuguesa e Redação</h1>
+        <h1>Portfólio de Redações</h1>
+
         <nav>
-            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <button id="menu-btn">☰</button>
+
+            <!-- MENU ATUALIZADO -->
             <ul id="menu">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#producoes">Produções</a></li>
-                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#redacoes">Redações</a></li>
+                <li><a href="#sobre">Sobre o Projeto</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -24,72 +26,60 @@
 
     <main>
 
+        <!-- LISTA DE REDAÇÕES -->
+        <section id="redacoes">
+            <h2>Minhas Redações</h2>
+
+            <article class="balao">
+                <img src="img/formatura.jpg" alt="Imagem representando formatura">
+                <h3>Encerramento do Ano Letivo: Um Ciclo que se Renova</h3>
+                <p>Clique para ler</p>
+            </article>
+
+            <article class="balao">
+                <img src="img/lembrancas.jpg" alt="Imagem representando lembranças escolares">
+                <h3>Memórias que Levamos Para a Vida</h3>
+                <p>Clique para ler</p>
+            </article>
+
+            <article class="balao">
+                <img src="img/agradecimento.jpg" alt="Imagem representando agradecimento">
+                <h3>Agradecimentos Finais do Ano</h3>
+                <p>Clique para ler</p>
+            </article>
+
+        </section>
+
+        <!-- SOBRE O PROJETO -->
         <section id="sobre">
-            <h2>Encerramento do Ano Letivo</h2>
-            <p>
-                Este site reúne as 15 produções realizadas ao longo do ano nas disciplinas 
-                de Língua Portuguesa e Redação. Aqui você poderá visualizar textos, imagens,
-                atividades e reflexões produzidas durante o ano letivo.
-            </p>
+            <h2>Sobre o Projeto</h2>
+            <p>Este portfólio foi desenvolvido para apresentar minhas redações e acompanhar minha evolução na escrita ao longo do ano letivo.</p>
         </section>
 
-        <section id="producoes">
-            <h2>15 Produções</h2>
-
-            <div class="grid-producoes">
-
-                <!-- MODELO DE ITEM - Repita até completar as 15 produções -->
-                <article class="producao">
-                    <img src="img/producao1.jpg" alt="Imagem da Produção 1">
-                    <h3>Produção 1 – Título do Texto</h3>
-                    <p>Breve descrição da produção, explicando o tema e o objetivo.</p>
-                    <a href="#" class="btn">Ler mais</a>
-                </article>
-
-                <article class="producao">
-                    <img src="img/producao2.jpg" alt="Imagem da Produção 2">
-                    <h3>Produção 2 – Título do Texto</h3>
-                    <p>Breve descrição da produção, explicando o tema e o objetivo.</p>
-                    <a href="#" class="btn">Ler mais</a>
-                </article>
-
-                <!-- Repita até 15 -->
-            </div>
-
-        </section>
-
-        <section id="galeria">
-            <h2>Galeria de Fotos</h2>
-            <div class="galeria">
-                <img src="img/foto1.jpg" alt="Foto de atividade 1">
-                <img src="img/foto2.jpg" alt="Foto de atividade 2">
-                <img src="img/foto3.jpg" alt="Foto de atividade 3">
-            </div>
-        </section>
-
+        <!-- CONTATO (NOVO) -->
         <section id="contato">
             <h2>Contato</h2>
-            <form onsubmit="return enviarFormulario()">
-                <label>Nome:</label>
-                <input type="text" required>
 
-                <label>Email:</label>
-                <input type="email" required>
+            <form id="contato-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome" required>
 
-                <label>Mensagem:</label>
-                <textarea required></textarea>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Seu e-mail" required>
 
-                <button type="submit" class="btn">Enviar</button>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+                <button type="submit">Enviar</button>
             </form>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2024 – Portfólio Escolar • Língua Portuguesa e Redação</p>
+        <p>© 2025 - Meu Portfólio de Redações</p>
     </footer>
 
-    <script src="script.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
