@@ -26,29 +26,22 @@
 
     <main>
 
-        <!-- LISTA DE REDAÇÕES -->
-        <section id="redacoes">
-            <h2>Minhas Redações</h2>
+        <article class="balao">
 
-            <article class="balao">
-                <img src="img/formatura.jpg" alt="Imagem representando formatura">
-                <h3>Encerramento do Ano Letivo: Um Ciclo que se Renova</h3>
-                <p>Clique para ler</p>
-            </article>
+    <!-- IMAGEM DO TEMA -->
+    <img class="tema-img" src="img/tema-redacao1.jpg" alt="Imagem do tema">
 
-            <article class="balao">
-                <img src="img/lembrancas.jpg" alt="Imagem representando lembranças escolares">
-                <h3>Memórias que Levamos Para a Vida</h3>
-                <p>Clique para ler</p>
-            </article>
+    <h3>Título da Redação</h3>
 
-            <article class="balao">
-                <img src="img/agradecimento.jpg" alt="Imagem representando agradecimento">
-                <h3>Agradecimentos Finais do Ano</h3>
-                <p>Clique para ler</p>
-            </article>
+    <!-- BOTÃO DE ABRIR -->
+    <button class="ler-btn" onclick="toggleRedacao('redacao1')">Ler</button>
 
-        </section>
+    <!-- BALÃO OCULTO COM A REDAÇÃO ESCRITA -->
+    <div id="redacao1" class="redacao-balao">
+        <img class="foto-redacao" src="img/redacao1-foto.jpg" alt="Foto da redação escrita">
+    </div>
+
+</article>
 
         <!-- SOBRE O PROJETO -->
         <section id="sobre">
