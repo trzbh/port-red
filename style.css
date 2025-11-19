@@ -1,66 +1,208 @@
-/* SEÇÃO DE CONTATO */
-#contato form {
+/* ---------- CONFIGURAÇÕES GERAIS ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f5f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ---------- CABEÇALHO ---------- */
+header {
+    background: #3c5fa6;
+    color: #fff;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-#contato input,
-#contato textarea {
-    padding: 10px;
-    border: 1px solid #bbb;
-    border-radius: 8px;
+header h1 {
+    font-size: 24px;
 }
 
-#contato button {
-    background: #4a67ff;
-    color: white;
-    padding: 12px;
+/* MENU */
+nav {
+    position: relative;
+}
+
+#menu-btn {
+    background: none;
     border: none;
-    border-radius: 8px;
+    color: #fff;
+    font-size: 26px;
     cursor: pointer;
-    font-size: 16px;
+    display: none; /* aparece apenas no mobile */
 }
 
-#contato button:hover {
-    background: #3a55d1;
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
-/* Imagem do tema */
+
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#menu li a:hover {
+    color: #d1e0ff;
+}
+
+/* ---------- RESPONSIVIDADE DO MENU ---------- */
+@media (max-width: 768px) {
+
+    #menu-btn {
+        display: block;
+    }
+
+    #menu {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: #3c5fa6;
+        flex-direction: column;
+        width: 180px;
+        display: none;
+        padding: 10px 0;
+        border-radius: 5px;
+    }
+
+    #menu.show {
+        display: flex;
+    }
+
+    #menu li {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+/* ---------- CONTEÚDO PRINCIPAL ---------- */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* ---------- CARTÃO DAS REDAÇÕES ---------- */
+.balao {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.balao:hover {
+    transform: translateY(-4px);
+}
+
 .tema-img {
     width: 100%;
-    border-radius: 14px;
+    max-width: 260px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-/* Botão Ler */
+/* BOTÃO LER */
 .ler-btn {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: #4a67ff;
-    color: white;
+    background: #3c5fa6;
+    color: #fff;
     border: none;
-    border-radius: 10px;
+    padding: 10px 20px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.3s;
 }
 
 .ler-btn:hover {
-    background: #3a55d1;
+    background: #5879c9;
 }
 
-/* Balão da redação escrita (oculto) */
+/* BALÃO QUE MOSTRA A REDAÇÃO */
 .redacao-balao {
+    display: none;
     margin-top: 15px;
-    padding: 15px;
-    background: #ffffff;
-    border-radius: 14px;
-    box-shadow: 0 4px 10px #0002;
-    display: none; /* ➜ Começa escondido */
 }
 
-/* Imagem da redação escrita */
 .foto-redacao {
     width: 100%;
-    border-radius: 10px;
-    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    animation: aparecer 0.4s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ---------- SEÇÕES (Sobre / Contato) ---------- */
+section {
+    margin-top: 50px;
+}
+
+section h2 {
+    font-size: 26px;
+    color: #3c5fa6;
+    margin-bottom: 15px;
+}
+
+/* ---------- FORMULÁRIO ---------- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form button {
+    background: #3c5fa6;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #5879c9;
+}
+
+/* ---------- RODAPÉ ---------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #3c5fa6;
+    color: white;
+    margin-top: 40px;
 }
