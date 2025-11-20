@@ -14,13 +14,14 @@ body {
 
 /* ---------- CABEÇALHO ---------- */
 header {
-    position: fixed; /* ou sticky */
-    top: 0;
+    position: fixed; /* fixa no topo da tela */
+    top: 0;          /* posição inicial */
     left: 0;
     width: 100%;
-    z-index: 100;
-    transition: top 0.3s; /* faz a animação suave ao sumir/voltar */
+    z-index: 100;    /* fica sobre os outros elementos */
+    transition: top 0.3s ease; /* animação suave */
 }
+
 
 
 header h1 {
