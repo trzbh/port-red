@@ -18,7 +18,7 @@ header {
     top: 0;          /* posição inicial */
     left: 0;
     width: 100%;
-    z-index: 100;    /* fica sobre os outros elementos */
+    z-index: 10;    /* fica sobre os outros elementos */
     transition: top 0.3s ease; /* animação suave */
 }
 
