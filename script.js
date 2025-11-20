@@ -39,22 +39,4 @@ window.onscroll = function() {
     prevScrollpos = currentScrollPos;
 };
 
-
-
-
-let prevScrollpos = window.pageYOffset; // posição inicial
-const header = document.querySelector("header");
-
-window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
-
-    if (prevScrollpos > currentScrollPos) {
-        // rolando para cima → mostra header
-        header.style.top = "0";
-    } else {
-        // rolando para baixo → esconde header
-        header.style.top = "-100px"; // ou ajuste a altura do seu header
-    }
-
-    prevScrollpos = currentScrollPos;
 };
