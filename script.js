@@ -12,3 +12,13 @@ document.getElementById('contato-form').addEventListener('submit', function(e) {
     alert("Mensagem enviada com sucesso!");
     this.reset();
 });
+function toggleRedacao(id) {
+    const balao = document.getElementById(id);
+
+    if (!balao) {
+        console.warn("ID inexistente:", id);
+        return;
+    }
+
+    balao.style.display = balao.style.display === "block" ? "none" : "block";
+}
