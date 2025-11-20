@@ -14,13 +14,14 @@ body {
 
 /* ---------- CABEÇALHO ---------- */
 header {
-    background: #5e341c;
+    background: #051f53;
     color: #fff;
     padding: 20px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
 }
@@ -57,7 +58,7 @@ nav {
 }
 
 #menu li a:hover {
-    color: #79624f;
+    color: #d1e0ff;
 }
 
 /* ---------- RESPONSIVIDADE DO MENU ---------- */
@@ -71,7 +72,7 @@ nav {
         position: absolute;
         top: 50px;
         right: 0;
-        background: #a6633c;
+        background: #3c5fa6;
         flex-direction: column;
         width: 180px;
         display: none;
@@ -98,11 +99,10 @@ main {
 
 /* ---------- CARTÃO DAS REDAÇÕES ---------- */
 .balao {
-    background: #5c2d059f;
-    color: #f5f5f7;
+    background: #fff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(250, 250, 250, 0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     margin-bottom: 30px;
     text-align: center;
     transition: 0.3s;
@@ -121,7 +121,7 @@ main {
 
 /* BOTÃO LER */
 .ler-btn {
-    background: #70300a;
+    background: #3c5fa6;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -132,14 +132,13 @@ main {
 }
 
 .ler-btn:hover {
-    background: #864b29;
+    background: #5879c9;
 }
 
 /* BALÃO QUE MOSTRA A REDAÇÃO */
 .redacao-balao {
     display: none;
     margin-top: 15px;
-   
 }
 
 .foto-redacao {
@@ -167,7 +166,7 @@ section {
 
 section h2 {
     font-size: 26px;
-    color: #5a310f;
+    color: #3c5fa6;
     margin-bottom: 15px;
 }
 
@@ -186,7 +185,7 @@ input, textarea {
 }
 
 form button {
-    background: #70300a;
+    background: #3c5fa6;
     color: #fff;
     border: none;
     padding: 12px;
@@ -197,21 +196,21 @@ form button {
 }
 
 form button:hover {
-    background: #864b29;
+    background: #5879c9;
 }
 
 /* ---------- RODAPÉ ---------- */
 footer {
     text-align: center;
     padding: 20px;
-    background: #5e341c;
+    background: #051f53;
     color: white;
     margin-top: 40px;
 }
 
 /*BOTÃO FECHAR*/
 .fechar-btn {
-    background: #642e0a;
+    background: #526bbe;
     border: none;
     color: white;
     padding: 5px 12px;
@@ -224,5 +223,6 @@ footer {
 }
 
 .fechar-btn:hover {
-    background: #0c0c0c;
+    background: #ff1f1f;
 }
+
