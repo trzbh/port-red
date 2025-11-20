@@ -14,16 +14,14 @@ body {
 
 /* ---------- CABEÇALHO ---------- */
 header {
-    background: #051f53;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
+    position: fixed; /* ou sticky */
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 100;
+    transition: top 0.3s; /* faz a animação suave ao sumir/voltar */
 }
+
 
 header h1 {
     font-size: 50px;
